@@ -1,4 +1,4 @@
-import { generateMappingPackage } from '@eva/processor/kitten/scripts/generate';
+import { generateMappingPackage } from './generate';
 
 const packages: string[] = process.argv.splice(2);
 
