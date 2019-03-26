@@ -10,6 +10,6 @@
     "url": "https://github.com/akveo/eva/issues"
   },
   "dependencies": {
-    "@eva/core": "github:artyorsh/eva#package/core"
+    "@eva/core": "github:akveo/eva#package/core"
   }
 }
