@@ -567,6 +567,9 @@
           "backgroundColor": {
             "type": "string"
           },
+          "textMarginHorizontal": {
+            "type": "number"
+          },
           "textColor": {
             "type": "string"
           },
@@ -579,7 +582,16 @@
           "textLineHeight": {
             "type": "number"
           },
-          "checkMarkColor": {
+          "iconWidth": {
+            "type": "number"
+          },
+          "iconHeight": {
+            "type": "number"
+          },
+          "iconBorderRadius": {
+            "type": "number"
+          },
+          "iconTintColor": {
             "type": "string"
           },
           "highlightWidth": {
@@ -648,16 +660,17 @@
       "appearances": {
         "default": {
           "mapping": {
-            "borderWidth": 1,
-            "borderRadius": 3,
-            "borderColor": "color-primary-500",
-            "backgroundColor": "color-primary-200",
-            "textColor": "font-primary-color",
-            "textFontWeight": "font-primary-regular-text-weight",
-            "textLineHeight": "font-primary-regular-text-line-height",
-            "checkMarkColor": "opacity-transparent",
             "width": 24,
             "height": 24,
+            "borderWidth": 1,
+            "borderRadius": 3,
+            "textMarginHorizontal": 12,
+            "textFontWeight": "font-primary-regular-text-weight",
+            "textLineHeight": "font-primary-regular-text-line-height",
+            "textColor": "font-primary-color",
+            "iconWidth": 12,
+            "iconHeight": 12,
+            "iconTintColor": "opacity-transparent",
             "textFontSize": "font-primary-regular-text-size",
             "highlightWidth": 40,
             "highlightHeight": 40,
@@ -665,27 +678,20 @@
             "highlightBackgroundColor": "transparent",
             "state": {
               "active": {
-                "borderColor": "color-primary-600",
-                "backgroundColor": "color-primary-600",
                 "highlightBackgroundColor": "gray-light"
               },
-              "indeterminate": {
-                "borderColor": "color-primary-500",
-                "backgroundColor": "color-primary-500",
-                "checkMarkColor": "color-white"
-              },
               "checked": {
-                "borderColor": "color-primary-500",
-                "backgroundColor": "color-primary-500",
-                "checkMarkColor": "color-white"
+                "iconTintColor": "color-white"
+              },
+              "indeterminate": {
+                "iconHeight": 4,
+                "iconBorderRadius": 6,
+                "iconTintColor": "color-white"
               },
               "disabled": {
                 "borderColor": "color-basic-600",
                 "backgroundColor": "color-basic-400",
                 "textColor": "font-primary-disabled-color"
-              },
-              "checked.active": {
-                "borderColor": "color-primary-600"
               },
               "checked.disabled": {
                 "borderColor": "color-basic-400",
@@ -695,6 +701,27 @@
           },
           "variantGroups": {
             "status": {
+              "primary": {
+                "borderColor": "color-primary-500",
+                "backgroundColor": "color-primary-200",
+                "state": {
+                  "active": {
+                    "borderColor": "color-primary-600",
+                    "backgroundColor": "color-primary-600"
+                  },
+                  "checked": {
+                    "borderColor": "color-primary-500",
+                    "backgroundColor": "color-primary-500"
+                  },
+                  "indeterminate": {
+                    "borderColor": "color-primary-500",
+                    "backgroundColor": "color-primary-500"
+                  },
+                  "checked.active": {
+                    "borderColor": "color-primary-600"
+                  }
+                }
+              },
               "success": {
                 "borderColor": "color-success-500",
                 "backgroundColor": "color-success-200",
@@ -782,7 +809,7 @@
               "white": {
                 "borderColor": "color-white",
                 "backgroundColor": "color-white",
-                "checkMarkColor": "opacity-transparent",
+                "iconTintColor": "opacity-transparent",
                 "state": {
                   "active": {
                     "borderColor": "color-white",
@@ -791,10 +818,10 @@
                   "checked": {
                     "backgroundColor": "color-white",
                     "borderColor": "color-white",
-                    "checkMarkColor": "color-primary-500"
+                    "iconTintColor": "color-primary-500"
                   },
                   "indeterminate": {
-                    "checkMarkColor": "color-primary-500"
+                    "iconTintColor": "color-primary-500"
                   },
                   "checked.active": {
                     "borderColor": "color-white"
