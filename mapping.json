@@ -250,17 +250,20 @@
           "backgroundColor": {
             "type": "string"
           },
-          "textColor": {
-            "type": "string"
+          "textMarginHorizontal": {
+            "type": "number"
           },
           "textFontSize": {
+            "type": "number"
+          },
+          "textLineHeight": {
             "type": "number"
           },
           "textFontWeight": {
             "type": "string"
           },
-          "textMarginHorizontal": {
-            "type": "number"
+          "textColor": {
+            "type": "string"
           },
           "iconWidth": {
             "type": "number"
@@ -429,6 +432,7 @@
                 "paddingHorizontal": 6,
                 "paddingVertical": 6,
                 "textFontSize": 10,
+                "textLineHeight": 12,
                 "textMarginHorizontal": 6,
                 "iconWidth": 12,
                 "iconHeight": 12,
@@ -440,6 +444,7 @@
                 "paddingHorizontal": 8,
                 "paddingVertical": 8,
                 "textFontSize": 12,
+                "textLineHeight": 16,
                 "textMarginHorizontal": 8,
                 "iconWidth": 16,
                 "iconHeight": 16,
@@ -451,6 +456,7 @@
                 "paddingHorizontal": 10,
                 "paddingVertical": 12,
                 "textFontSize": 14,
+                "textLineHeight": 16,
                 "textMarginHorizontal": 10,
                 "iconWidth": 16,
                 "iconHeight": 16,
@@ -462,6 +468,7 @@
                 "paddingHorizontal": 10,
                 "paddingVertical": 14,
                 "textFontSize": 16,
+                "textLineHeight": 20,
                 "textMarginHorizontal": 10,
                 "iconWidth": 20,
                 "iconHeight": 20,
@@ -473,6 +480,7 @@
                 "paddingHorizontal": 12,
                 "paddingVertical": 16,
                 "textFontSize": 18,
+                "textLineHeight": 24,
                 "textMarginHorizontal": 12,
                 "iconWidth": 24,
                 "iconHeight": 24,
@@ -675,6 +683,26 @@
           }
         },
         "variantGroups": {
+          "status": {
+            "primary": {
+              "default": true
+            },
+            "success": {
+              "default": false
+            },
+            "info": {
+              "default": false
+            },
+            "warning": {
+              "default": false
+            },
+            "danger": {
+              "default": false
+            },
+            "white": {
+              "default": false
+            }
+          },
           "size": {
             "tiny": {
               "default": false
@@ -700,7 +728,6 @@
           "mapping": {
             "borderRadius": 8,
             "borderColor": "opacity-transparent",
-            "buttonBorderRightColor": "color-primary-600",
             "buttonBorderRightWidth": 1
           },
           "variantGroups": {
@@ -710,15 +737,60 @@
               "medium": {},
               "large": {},
               "giant": {}
+            },
+            "status": {
+              "primary": {
+                "buttonBorderRightColor": "color-primary-600"
+              },
+              "success": {
+                "buttonBorderRightColor": "color-success-600"
+              },
+              "info": {
+                "buttonBorderRightColor": "color-info-600"
+              },
+              "warning": {
+                "buttonBorderRightColor": "color-warning-600"
+              },
+              "danger": {
+                "buttonBorderRightColor": "color-danger-600"
+              },
+              "white": {
+                "buttonBorderRightColor": "color-white"
+              }
             }
           }
         },
         "outline": {
           "mapping": {
-            "borderWidth": 2,
-            "borderColor": "color-primary-500",
-            "buttonBorderRightColor": "color-primary-500",
-            "buttonBorderRightWidth": 2
+            "borderWidth": 2
+          },
+          "variantGroups": {
+            "status": {
+              "primary": {
+                "borderColor": "color-primary-500",
+                "buttonBorderRightColor": "color-primary-500"
+              },
+              "success": {
+                "borderColor": "color-success-500",
+                "buttonBorderRightColor": "color-success-500"
+              },
+              "info": {
+                "borderColor": "color-info-500",
+                "buttonBorderRightColor": "color-info-500"
+              },
+              "warning": {
+                "borderColor": "color-warning-500",
+                "buttonBorderRightColor": "color-warning-500"
+              },
+              "danger": {
+                "borderColor": "color-danger-500",
+                "buttonBorderRightColor": "color-danger-500"
+              },
+              "white": {
+                "borderColor": "color-white",
+                "buttonBorderRightColor": "color-white"
+              }
+            }
           }
         },
         "ghost": {
