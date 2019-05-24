@@ -2134,7 +2134,7 @@
               "large": {
                 "width": 32,
                 "height": 32,
-                "hitSlop": 0,
+                "hitSlop": 8,
                 "iconWidth": 22,
                 "iconHeight": 22,
                 "outlineWidth": 48,
