@@ -1,6 +1,6 @@
 {
-  "name": "@eva/processor-kitten",
-  "description": "Eva scheme processor for react-native-ui-kitten",
+  "name": "@eva-design/processor",
+  "description": "Eva Design System Schema Processor",
   "version": "0.0.1",
   "license": "MIT",
   "author": "akveo <contact@akveo.com>",
@@ -14,7 +14,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@eva/core": "github:akveo/eva#package/core"
+    "@eva-design/dss": "github:akveo/eva#package/dss"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",

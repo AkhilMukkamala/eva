@@ -1,5 +1,5 @@
 import { MetaProcessor } from './metaProcessor';
-import { ThemeStyleType } from '@eva/core';
+import { ThemeStyleType } from '@eva-design/dss';
 import {
   mapping,
   meta,

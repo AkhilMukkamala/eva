@@ -4,7 +4,7 @@ import {
   StrictTheme,
   ThemedStyleType,
   ControlThemedStyleType,
-} from '@eva/core';
+} from '@eva-design/dss';
 import { MappingMetaType } from '../mapping/mappingProcessor';
 import { Processor } from '../processor';
 import {

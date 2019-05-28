@@ -1,4 +1,4 @@
-import { MappingType } from '@eva/core';
+import { MappingType } from '@eva-design/dss';
 import { mapping } from './mapping.spec.config';
 import * as Service from './mapping.service';
 

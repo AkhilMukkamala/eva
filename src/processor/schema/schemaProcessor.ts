@@ -7,7 +7,7 @@ import { MetaProcessor } from '../meta/metaProcessor';
 import {
   SchemaType,
   ThemeStyleType,
-} from '@eva/core';
+} from '@eva-design/dss';
 
 export class SchemaProcessor implements Processor<SchemaType, ThemeStyleType> {
 
