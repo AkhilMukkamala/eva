@@ -1,6 +1,6 @@
 {
-  "name": "@eva/eva",
-  "description": "Eva design system default scheme",
+  "name": "@eva-design/eva",
+  "description": "Eva Design System default schema",
   "version": "0.0.1",
   "license": "MIT",
   "author": "akveo <contact@akveo.com>",
@@ -13,7 +13,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@eva/core": "github:akveo/eva#package/core"
+    "@eva-design/dss": "github:akveo/eva#package/dss"
   },
   "devDependencies": {
     "tslint": "^5.14.0",
